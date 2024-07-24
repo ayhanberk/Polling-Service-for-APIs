@@ -23,7 +23,7 @@ namespace PollingService
         {
 
             await FirstRequest(); // if want to first request with time
-            timer = new Timer(300000); // 1 min - every 1 min check conditions
+            timer = new Timer(60000); // 1 min - every 1 min check conditions
             timer.Elapsed += async (sender, e) => await OnTimerRequest();
             timer.Start();
 
