@@ -13,7 +13,7 @@ namespace PollingService
     internal class StartApp
     {
         private static Timer timer;
-        private static readonly string connectionString = "Data Source=SERVER-NAME; Initial Catalog=DB-NAME; User ID=USER-NAME; Password=PASSOWRD; MultipleActiveResultSets=True; Pooling=true";;
+        private static readonly string connectionString = "Data Source=SERVER-NAME; Initial Catalog=DB-NAME; User ID=USER-NAME; Password=PASSWORD; MultipleActiveResultSets=True; Pooling=true";
         private static readonly List<APIList> apiList = new List<APIList>
         {
             new APIList { ApiURL = "URL", ApiTag = "URL-TAG", ApiTimer="TIMER TYPE INT MINUTE", LastRequestTime=DateTime.Now },
